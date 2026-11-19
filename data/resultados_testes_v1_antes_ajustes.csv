@@ -1,0 +1,43 @@
+﻿id;tipo;pergunta;esperado;obtido;acerto;tempo_ms;melhor_candidato;opcoes_oferecidas;dados_pessoais_removidos;obs
+T01;direta;Como tirar a Carteira de Identidade Nacional?;DOC01;DOC01;SIM;0.0258;DOC01 (13 pts, cobertura 100%);;;
+T02;direta;Como faço para fazer meu CPF?;DOC02;DOC02;SIM;0.0154;DOC02 (3 pts, cobertura 100%);;;
+T03;direta;Como pedir o seguro-desemprego?;SER05;SER05;SIM;0.0176;SER05 (10 pts, cobertura 100%);;;
+T04;direta;Como emitir o passaporte?;DOC05;DOC05;SIM;0.2671;DOC05 (3 pts, cobertura 50%);;;
+T05;direta;Onde consigo o cartão do SUS?;SER01;SER01;SIM;0.0192;SER01 (10 pts, cobertura 100%);;;
+T06;direta;Comprei pela internet e me arrependi, posso devolver?;DIR01;DIR01;SIM;0.4802;DIR01 (12 pts, cobertura 100%);;;
+T07;direta;Qual o número para denunciar violência contra a mulher?;COM02;COM02;SIM;0.0307;COM02 (12 pts, cobertura 100%);COM01;;
+T08;direta;Quem tem direito a meia-entrada?;DIR06;DIR06;SIM;0.0286;DIR06 (12 pts, cobertura 100%);;;
+T09;reformulacao;fui mandado embora, e agora? como recebo o auxílio desemprego;SER05;SER05;SIM;0.0282;SER05 (16 pts, cobertura 100%);;;linguagem informal
+T10;reformulacao;preciso do rg novo;DOC01;DOC01;SIM;0.0123;DOC01 (8 pts, cobertura 100%);;;sigla popular (RG)
+T11;reformulacao;pasaporte pra viajar;DOC05;DOC05;SIM;0.2315;DOC05 (6 pts, cobertura 100%);;;erro de digitação
+T12;reformulacao;remédio de graça para pressão alta;SER02;SER02;SIM;0.0345;SER02 (9 pts, cobertura 75%);;;sinônimos (remédio, pressão)
+T13;reformulacao;não tenho dinheiro para pagar advogado;DIR04;DIR04;SIM;0.2292;DIR04 (6 pts, cobertura 67%);;;
+T14;reformulacao;minha avó tem prioridade na fila do banco?;DIR05;DIR05;SIM;0.025;DIR05 (12 pts, cobertura 100%);;;sinônimo (avó -> idoso)
+T15;reformulacao;quero reclamar de uma loja que não resolve meu problema;DIR02;DIR02;SIM;0.0267;DIR02 (11 pts, cobertura 100%);;;sinônimo (loja -> empresa)
+T16;reformulacao;como deixar minha conta do governo nível ouro;DOC07;DOC07;SIM;0.2669;DOC07 (14 pts, cobertura 80%);;;
+T17;reformulacao;vacina de criança onde tomar;SER03;SER03;SIM;0.0176;SER03 (6 pts, cobertura 100%);COM01;;
+T18;reformulacao;alguém passando mal, chamar ambulância;COM03;COM03;SIM;0.2652;COM03 (11 pts, cobertura 75%);;;
+T19;fora_do_tema;Qual a receita de bolo de cenoura?;SEM_RESPOSTA;SEM_RESPOSTA;SIM;0.2603;DOC02 (3 pts, cobertura 33%);DOC02 SER02;;
+T20;fora_do_tema;Quem ganhou o jogo de futebol ontem?;SEM_RESPOSTA;SEM_RESPOSTA;SIM;0.6659;- (0 pts, cobertura 0%);;;
+T21;fora_do_tema;Como tirar a carteira de motorista (CNH)?;SEM_RESPOSTA;SEM_RESPOSTA;SIM;0.2345;DOC01 (3 pts, cobertura 33%);DOC01 DOC03;;assunto próximo, mas fora da base
+T22;limitacao;;ENTRADA_VAZIA;ENTRADA_VAZIA;SIM;0.0004;- (0 pts, cobertura 0%);;;entrada vazia
+T23;limitacao;documento;AMBIGUA;AMBIGUA;SIM;0.018;DOC01 (3 pts, cobertura 100%);DOC01 DOC02 DOC03 DOC04 DOC05;;consulta ambígua (palavra genérica)
+T24;limitacao;???!!!;ENTRADA_INVALIDA;ENTRADA_INVALIDA;SIM;0.0028;- (0 pts, cobertura 0%);;;só símbolos
+T25;limitacao;Qual o horário de funcionamento do posto de saúde do meu bairro?;SEM_RESPOSTA;SEM_RESPOSTA;SIM;0.6319;SER03 (8 pts, cobertura 40%);SER03 SER01 SER02;;ausência de resposta confiável (dado local)
+T26;limitacao;benefício;AMBIGUA;AMBIGUA;SIM;0.0125;SER04 (3 pts, cobertura 100%);SER04 SER05 SER06;;consulta ambígua
+T27;limitacao;meu cpf é 123.456.789-00, como faço a carteira de trabalho digital?;DOC03;DOC03;SIM;0.0382;DOC03 (13 pts, cobertura 75%);;CPF;dado pessoal deve ser removido
+T28;cega;quero tirar meu primeiro documento de viagem pra fora do pais, como faço?;DOC05;SEM_RESPOSTA;NAO;0.0412;DOC04 (4 pts, cobertura 40%);DOC04 DOC05 DOC01;;escrita às cegas (só com os títulos dos assuntos)
+T29;cega;meu RG é antigo, preciso trocar por aquele modelo novo com CPF?;DOC01;DOC01;SIM;0.6506;DOC01 (7 pts, cobertura 50%);;;escrita às cegas (só com os títulos dos assuntos)
+T30;cega;comprei um tenis pela internet e nao gostei, posso devolver e ter o dinheiro de volta?;DIR01;SEM_RESPOSTA;NAO;0.5097;DIR01 (9 pts, cobertura 43%);DIR01 DIR04;;escrita às cegas (só com os títulos dos assuntos)
+T31;cega;nao tenho dinheiro pra pagar advogado, onde consigo ajuda de graça?;DIR04;DIR04;SIM;0.236;DIR04 (11 pts, cobertura 75%);;;escrita às cegas (só com os títulos dos assuntos)
+T32;cega;fui demitido semana passada, tenho direito a alguma ajuda do governo?;SER05;SEM_RESPOSTA;NAO;0.4987;COM01 (3 pts, cobertura 20%);COM01 COM03 DIR01;;escrita às cegas (só com os títulos dos assuntos)
+T33;cega;minha mae ta passando mal, desmaiou, pra onde ligo urgente??;COM03;SEM_RESPOSTA;NAO;0.4969;COM03 (11 pts, cobertura 43%);COM03;;escrita às cegas (só com os títulos dos assuntos)
+T34;cega;completei 16 anos, como faço pra poder votar?;DOC04;SEM_RESPOSTA;NAO;0.4299;DIR05 (3 pts, cobertura 20%);DIR05 DOC04;;escrita às cegas (só com os títulos dos assuntos)
+T35;cega;uma empresa usou meus dados sem eu autorizar, o que posso fazer?;DIR07;DIR07;SIM;0.2501;DIR07 (5 pts, cobertura 50%);;;escrita às cegas (só com os títulos dos assuntos)
+T36;cega;onde consigo remedio de pressao mais barato ou de graça?;SER02;SER02;SIM;0.2676;SER02 (9 pts, cobertura 75%);;;escrita às cegas (só com os títulos dos assuntos)
+T37;cega;meu vizinho ta agredindo a esposa, tem algum numero pra denunciar?;COM02;SEM_RESPOSTA;NAO;0.9301;COM02 (4 pts, cobertura 33%);COM02 COM01 DOC02;;escrita às cegas (só com os títulos dos assuntos)
+T38;cega;sou estudante, tenho direito de pagar metade no cinema?;DIR06;DIR06;SIM;0.4367;DIR06 (8 pts, cobertura 60%);;;escrita às cegas (só com os títulos dos assuntos)
+T39;cega;como faço pra renovar minha CNH que venceu?;SEM_RESPOSTA;SEM_RESPOSTA;SIM;0.5364;- (0 pts, cobertura 0%);;;escrita às cegas (só com os títulos dos assuntos)
+T40;cega;quando vence o IPTU do meu apartamento e como parcelar?;SEM_RESPOSTA;SEM_RESPOSTA;SIM;0.4417;- (0 pts, cobertura 0%);;;escrita às cegas (só com os títulos dos assuntos)
+T41;cega;como matricular meu filho na escola publica do bairro?;SEM_RESPOSTA;SEM_RESPOSTA;SIM;0.6627;DIR04 (3 pts, cobertura 20%);DIR04 DOC06;;escrita às cegas (só com os títulos dos assuntos)
+T42;cega;recebi uma multa de transito injusta, como recorro?;SEM_RESPOSTA;SEM_RESPOSTA;SIM;1.0851;DOC02 (3 pts, cobertura 20%);DOC02 SER02;;escrita às cegas (só com os títulos dos assuntos)

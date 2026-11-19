@@ -1,0 +1,971 @@
+{
+  "versao": "1.0",
+  "descricao": "Base de orientações do Citizen Assist AI. Cada registro resume uma página oficial (gov.br, Planalto, TSE, Polícia Federal, Ministério da Saúde etc.). Conteúdo orientativo: sempre confirme no canal oficial citado.",
+  "temas": {
+    "documentos": {
+      "nome": "Documentos",
+      "descricao": "Como obter os principais documentos pessoais e o acesso digital ao governo.",
+      "subtemas": {
+        "identificacao": "Identificação civil (CIN e CPF)",
+        "trabalho": "Documentos de trabalho",
+        "cidadania": "Cidadania e eleições",
+        "viagem": "Viagem ao exterior",
+        "registro_civil": "Registro civil (cartório)",
+        "acesso_digital": "Acesso digital (conta gov.br)"
+      }
+    },
+    "servicos": {
+      "nome": "Serviços de saúde e assistência",
+      "descricao": "Serviços públicos de saúde, assistência social, trabalho e previdência.",
+      "subtemas": {
+        "saude": "Saúde (SUS)",
+        "assistencia_social": "Assistência social",
+        "trabalho_previdencia": "Trabalho e previdência"
+      }
+    },
+    "direitos": {
+      "nome": "Direitos do cidadão",
+      "descricao": "Direitos do consumidor, acesso à Justiça, grupos com prioridade e proteção de dados.",
+      "subtemas": {
+        "consumidor": "Direito do consumidor",
+        "justica": "Acesso à Justiça",
+        "grupos_prioritarios": "Prioridades e meia-entrada",
+        "dados_pessoais": "Proteção de dados pessoais"
+      }
+    },
+    "comunitario": {
+      "nome": "Orientações comunitárias e canais de ajuda",
+      "descricao": "Telefones e canais públicos para denúncias, emergências e apoio.",
+      "subtemas": {
+        "denuncia": "Denúncias e proteção",
+        "emergencia": "Emergências"
+      }
+    }
+  },
+  "temas_relacionados": [
+    [
+      "documentos",
+      "servicos"
+    ],
+    [
+      "servicos",
+      "direitos"
+    ],
+    [
+      "direitos",
+      "comunitario"
+    ],
+    [
+      "documentos",
+      "direitos"
+    ]
+  ],
+  "sinonimos": {
+    "rg": [
+      "identidade"
+    ],
+    "identidade": [
+      "rg"
+    ],
+    "remedio": [
+      "medicamento"
+    ],
+    "remedios": [
+      "medicamento"
+    ],
+    "medicamento": [
+      "remedio"
+    ],
+    "gratis": [
+      "gratuito"
+    ],
+    "graca": [
+      "gratuito"
+    ],
+    "demitido": [
+      "desemprego"
+    ],
+    "dispensado": [
+      "desemprego"
+    ],
+    "posto": [
+      "ubs"
+    ],
+    "advogado": [
+      "defensoria"
+    ],
+    "avo": [
+      "idoso"
+    ],
+    "velhinho": [
+      "idoso"
+    ],
+    "idosa": [
+      "idoso"
+    ],
+    "loja": [
+      "empresa"
+    ],
+    "pressao": [
+      "hipertensao"
+    ],
+    "aposentar": [
+      "aposentadoria"
+    ],
+    "vacinar": [
+      "vacina"
+    ],
+    "ambulancia": [
+      "samu"
+    ],
+    "cartorio": [
+      "registro"
+    ],
+    "agredindo": [
+      "agressao"
+    ],
+    "agredir": [
+      "agressao"
+    ],
+    "bater": [
+      "agressao"
+    ],
+    "apanhando": [
+      "agressao"
+    ],
+    "esposa": [
+      "mulher"
+    ],
+    "companheira": [
+      "mulher"
+    ],
+    "namorada": [
+      "mulher"
+    ]
+  },
+  "orientacoes": [
+    {
+      "id": "DOC01",
+      "tema": "documentos",
+      "subtema": "identificacao",
+      "titulo": "Carteira de Identidade Nacional (CIN, o novo RG)",
+      "pergunta": "Como tirar a Carteira de Identidade Nacional (novo RG)?",
+      "palavras_chave": [
+        "carteira de identidade nacional",
+        "cin",
+        "rg",
+        "rg novo",
+        "identidade",
+        "carteira de identidade",
+        "documento de identidade",
+        "registro geral"
+      ],
+      "orientacao": "A Carteira de Identidade Nacional (CIN) substitui o antigo RG e usa o número do CPF como identificação única, válida em todo o país. A primeira emissão em papel é gratuita. O pedido é feito no órgão de identificação do seu estado (em São Paulo, por exemplo, pelo Poupatempo), em geral com agendamento.",
+      "passos": [
+        "Procure o órgão de identificação do seu estado e veja como agendar o atendimento.",
+        "Leve a certidão de nascimento ou de casamento original e, se já tiver, o número do CPF.",
+        "No atendimento, são feitas a foto e a coleta das digitais.",
+        "Depois que a carteira física for emitida, a versão digital pode ser acessada no aplicativo gov.br."
+      ],
+      "referencia": {
+        "orgao": "Governo Digital (gov.br)",
+        "titulo": "Carteira de Identidade Nacional",
+        "url": "https://www.gov.br/governodigital/pt-br/identidade/cin"
+      },
+      "data_verificacao": "2026-11-19",
+      "requer_confirmacao": true,
+      "observacao_confirmacao": "Documentos exigidos, taxas de 2ª via e forma de agendamento variam de estado para estado.",
+      "relacionados": [
+        "DOC02",
+        "DOC07",
+        "DOC06"
+      ]
+    },
+    {
+      "id": "DOC02",
+      "tema": "documentos",
+      "subtema": "identificacao",
+      "titulo": "Inscrição no CPF",
+      "pergunta": "Como fazer o CPF?",
+      "palavras_chave": [
+        "cpf",
+        "cadastro de pessoas fisicas",
+        "inscricao no cpf",
+        "fazer cpf",
+        "receita federal",
+        "numero do cpf"
+      ],
+      "orientacao": "A inscrição no CPF é gratuita quando feita diretamente pela Receita Federal, pela página do serviço no gov.br. Se for feita em unidades conveniadas (cartórios de registro civil, Banco do Brasil, Caixa ou Correios), é cobrada uma taxa de R$ 7,00. Não é preciso usar intermediários.",
+      "passos": [
+        "Acesse no gov.br o serviço \"Inscrever Cidadão no Cadastro de Pessoas Físicas (CPF)\".",
+        "Preencha os dados pedidos e siga as instruções da página.",
+        "Se preferir atendimento presencial, procure uma unidade conveniada (taxa de R$ 7,00)."
+      ],
+      "referencia": {
+        "orgao": "Receita Federal (gov.br)",
+        "titulo": "Inscrever Cidadão no Cadastro de Pessoas Físicas (CPF)",
+        "url": "https://www.gov.br/pt-br/servicos/inscrever-no-cpf"
+      },
+      "data_verificacao": "2026-11-19",
+      "requer_confirmacao": false,
+      "relacionados": [
+        "DOC01",
+        "DOC07",
+        "DOC03"
+      ]
+    },
+    {
+      "id": "DOC03",
+      "tema": "documentos",
+      "subtema": "trabalho",
+      "titulo": "Carteira de Trabalho Digital",
+      "pergunta": "Como obter a Carteira de Trabalho?",
+      "palavras_chave": [
+        "carteira de trabalho",
+        "carteira de trabalho digital",
+        "ctps",
+        "ctps digital",
+        "carteira profissional",
+        "registro em carteira"
+      ],
+      "orientacao": "A Carteira de Trabalho é emitida prioritariamente no formato digital. Para obtê-la, basta ter o número do CPF e uma conta gov.br e acessar o aplicativo Carteira de Trabalho Digital (Android ou iOS) ou a versão web. O serviço é gratuito e o atendimento é imediato.",
+      "passos": [
+        "Crie ou acesse sua conta gov.br.",
+        "Baixe o aplicativo Carteira de Trabalho Digital ou acesse o serviço pela web.",
+        "Entre com sua conta gov.br: a carteira já aparece com os vínculos registrados.",
+        "Dúvidas: Central 158 do Ministério do Trabalho e Emprego."
+      ],
+      "referencia": {
+        "orgao": "Ministério do Trabalho e Emprego (gov.br)",
+        "titulo": "Obter a Carteira de Trabalho",
+        "url": "https://www.gov.br/pt-br/servicos/obter-a-carteira-de-trabalho"
+      },
+      "data_verificacao": "2026-11-19",
+      "requer_confirmacao": false,
+      "relacionados": [
+        "DOC07",
+        "SER05",
+        "DOC02"
+      ]
+    },
+    {
+      "id": "DOC04",
+      "tema": "documentos",
+      "subtema": "cidadania",
+      "titulo": "Primeiro título de eleitor",
+      "pergunta": "Como tirar o título de eleitor?",
+      "palavras_chave": [
+        "titulo de eleitor",
+        "titulo eleitoral",
+        "eleitor",
+        "votar",
+        "alistamento eleitoral",
+        "titulo net",
+        "e-titulo",
+        "justica eleitoral",
+        "tse",
+        "16 anos",
+        "primeiro titulo"
+      ],
+      "orientacao": "O primeiro título de eleitor pode ser solicitado pelo Autoatendimento Eleitoral (Título Net), nos sites do TSE e dos Tribunais Regionais Eleitorais. Depois do envio, guarde o número de protocolo para acompanhar o pedido; quando aprovado, o título fica disponível no aplicativo e-Título. Quem ainda precisa cadastrar a biometria deve comparecer a um cartório eleitoral.",
+      "passos": [
+        "No site do TSE, acesse Serviços > Autoatendimento Eleitoral > Título Eleitoral.",
+        "Escolha a opção para tirar o título e preencha os dados pedidos.",
+        "Guarde o número de protocolo e acompanhe a solicitação pelo mesmo serviço.",
+        "Com o pedido aprovado, baixe o aplicativo e-Título."
+      ],
+      "referencia": {
+        "orgao": "Tribunal Superior Eleitoral (TSE)",
+        "titulo": "Não tem título de eleitor? Veja como tirar o documento pela internet",
+        "url": "https://www.tse.jus.br/comunicacao/noticias/2024/Fevereiro/nao-tem-titulo-de-eleitor-veja-como-tirar-o-documento-pela-internet"
+      },
+      "data_verificacao": "2026-11-19",
+      "requer_confirmacao": true,
+      "observacao_confirmacao": "O alistamento fica suspenso nos meses próximos às eleições, e a exigência de biometria pode obrigar o atendimento presencial.",
+      "relacionados": [
+        "DOC07",
+        "DOC01",
+        "DIR04"
+      ]
+    },
+    {
+      "id": "DOC05",
+      "tema": "documentos",
+      "subtema": "viagem",
+      "titulo": "Passaporte comum",
+      "pergunta": "Como tirar o passaporte?",
+      "palavras_chave": [
+        "passaporte",
+        "viajar para o exterior",
+        "viagem internacional",
+        "policia federal",
+        "gru passaporte",
+        "documento de viagem",
+        "viajar",
+        "exterior",
+        "fora do pais"
+      ],
+      "orientacao": "O passaporte comum é emitido pela Polícia Federal. É preciso preencher o formulário on-line, pagar a taxa (GRU; R$ 257,25 na taxa comum, conforme a página consultada), agendar o atendimento e comparecer pessoalmente — inclusive menores de 18 anos. A entrega costuma ocorrer entre 6 e 10 dias úteis, e o passaporte precisa ser retirado em até 90 dias corridos.",
+      "passos": [
+        "Preencha o formulário de solicitação no site da Polícia Federal.",
+        "Emita e pague a GRU (o pagamento por PIX compensa na hora).",
+        "Agende o atendimento presencial no posto escolhido.",
+        "Compareça com os documentos para a coleta de digitais e foto e retire o passaporte no mesmo posto."
+      ],
+      "referencia": {
+        "orgao": "Polícia Federal (gov.br)",
+        "titulo": "Obter passaporte",
+        "url": "https://www.gov.br/pf/pt-br/assuntos/passaporte"
+      },
+      "data_verificacao": "2026-11-19",
+      "requer_confirmacao": true,
+      "observacao_confirmacao": "Taxas e prazos são reajustados; confira os valores atuais antes de pagar.",
+      "relacionados": [
+        "DOC01",
+        "DOC07",
+        "DOC02"
+      ]
+    },
+    {
+      "id": "DOC06",
+      "tema": "documentos",
+      "subtema": "registro_civil",
+      "titulo": "Certidão de nascimento gratuita",
+      "pergunta": "A certidão de nascimento é gratuita?",
+      "palavras_chave": [
+        "certidao de nascimento",
+        "registro de nascimento",
+        "registrar bebe",
+        "registrar filho",
+        "certidao de obito",
+        "cartorio de registro civil"
+      ],
+      "orientacao": "O registro civil de nascimento e a primeira certidão de nascimento são gratuitos para todas as pessoas, assim como o registro de óbito e a primeira certidão de óbito, conforme a Lei nº 9.534/1997. O registro é feito no Cartório de Registro Civil de Pessoas Naturais.",
+      "passos": [
+        "Procure um Cartório de Registro Civil de Pessoas Naturais.",
+        "Leve a Declaração de Nascido Vivo (DNV), entregue pela maternidade, e os documentos dos pais.",
+        "Nenhuma taxa pode ser cobrada pelo registro nem pela primeira certidão."
+      ],
+      "referencia": {
+        "orgao": "Planalto — Legislação federal",
+        "titulo": "Lei nº 9.534, de 10 de dezembro de 1997",
+        "url": "https://www.planalto.gov.br/ccivil_03/leis/l9534.htm"
+      },
+      "data_verificacao": "2026-11-19",
+      "requer_confirmacao": false,
+      "relacionados": [
+        "DOC01",
+        "DOC02",
+        "SER01"
+      ]
+    },
+    {
+      "id": "DOC07",
+      "tema": "documentos",
+      "subtema": "acesso_digital",
+      "titulo": "Conta gov.br e seus níveis",
+      "pergunta": "Como criar e aumentar o nível da conta gov.br?",
+      "palavras_chave": [
+        "conta gov.br",
+        "gov.br",
+        "govbr",
+        "nivel ouro",
+        "nivel prata",
+        "nivel bronze",
+        "aumentar nivel",
+        "selo de confiabilidade",
+        "login do governo",
+        "aplicativo do governo"
+      ],
+      "orientacao": "A conta gov.br é criada de graça com o número do CPF, pelo site ou pelo aplicativo gov.br. Ela tem três níveis — bronze, prata e ouro — e alguns serviços exigem prata ou ouro. Para chegar ao prata, valide seus dados por um banco credenciado ou por reconhecimento facial; para o ouro, use a leitura do QR Code da CIN, um certificado digital ou a biometria da Justiça Eleitoral.",
+      "passos": [
+        "Baixe o aplicativo gov.br ou acesse o site e crie a conta com seu CPF.",
+        "No aplicativo, toque em \"ver nível\" e depois em \"aumentar nível da conta\".",
+        "Escolha uma das formas de validação disponíveis para você."
+      ],
+      "referencia": {
+        "orgao": "Ministério da Gestão e da Inovação em Serviços Públicos (gov.br)",
+        "titulo": "Aumente os níveis de sua conta GOV.BR para ter mais segurança e acesso a todos os serviços",
+        "url": "https://www.gov.br/gestao/pt-br/assuntos/editoria-defeso-eleitoral/aumente-os-niveis-de-sua-conta-gov-br-para-ter-mais-seguranca-e-acesso-a-todos-os-servicos"
+      },
+      "data_verificacao": "2026-11-19",
+      "requer_confirmacao": false,
+      "relacionados": [
+        "DOC03",
+        "SER01",
+        "SER06"
+      ]
+    },
+    {
+      "id": "SER01",
+      "tema": "servicos",
+      "subtema": "saude",
+      "titulo": "Cartão Nacional de Saúde (cartão do SUS)",
+      "pergunta": "Como conseguir o cartão do SUS?",
+      "palavras_chave": [
+        "cartao do sus",
+        "cartao sus",
+        "cartao nacional de saude",
+        "cns",
+        "sus",
+        "meu sus digital",
+        "cadastro no sus"
+      ],
+      "orientacao": "O Cartão Nacional de Saúde (CNS) é emitido presencialmente em um estabelecimento de saúde, como a Unidade Básica de Saúde (UBS). Leve documento de identidade e CPF; alguns municípios também pedem comprovante de residência. Depois, o cartão pode ser consultado no aplicativo Meu SUS Digital, entrando com a conta gov.br.",
+      "passos": [
+        "Vá à Unidade Básica de Saúde (UBS) mais próxima de casa.",
+        "Leve documento de identidade e CPF (e comprovante de residência, se o município pedir).",
+        "Para ver o cartão no celular, entre no Meu SUS Digital com a conta gov.br e abra o Perfil."
+      ],
+      "referencia": {
+        "orgao": "Ministério da Saúde (gov.br)",
+        "titulo": "Como faço o Cartão Nacional de Saúde (CNS) pelo Meu SUS Digital?",
+        "url": "https://www.gov.br/saude/pt-br/composicao/seidigi/meususdigital/perguntas-e-respostas/cidadao/9-como-faco-o-cartao"
+      },
+      "data_verificacao": "2026-11-19",
+      "requer_confirmacao": true,
+      "observacao_confirmacao": "Os documentos pedidos podem variar conforme o município.",
+      "relacionados": [
+        "SER03",
+        "SER02",
+        "DOC07"
+      ]
+    },
+    {
+      "id": "SER02",
+      "tema": "servicos",
+      "subtema": "saude",
+      "titulo": "Farmácia Popular",
+      "pergunta": "Como pegar remédio de graça na Farmácia Popular?",
+      "palavras_chave": [
+        "farmacia popular",
+        "medicamento gratuito",
+        "medicamento de graca",
+        "remedio gratuito",
+        "hipertensao",
+        "diabetes",
+        "receita medica"
+      ],
+      "orientacao": "Desde 14 de fevereiro de 2025, o Programa Farmácia Popular oferece gratuitamente 100% dos medicamentos e insumos do seu elenco, que atende indicações como hipertensão (pressão alta) e diabetes, entre outras. A retirada é feita em farmácias credenciadas ao programa, com receita médica e documento de identificação com CPF.",
+      "passos": [
+        "Tenha uma receita médica válida para o medicamento.",
+        "Procure uma farmácia credenciada ao Farmácia Popular (a farmácia exibe o selo do programa).",
+        "Apresente a receita e um documento de identidade com o número do CPF."
+      ],
+      "referencia": {
+        "orgao": "Ministério da Saúde (gov.br)",
+        "titulo": "Farmácia Popular",
+        "url": "https://www.gov.br/saude/pt-br/composicao/sectics/farmacia-popular"
+      },
+      "data_verificacao": "2026-11-19",
+      "requer_confirmacao": true,
+      "observacao_confirmacao": "A lista de medicamentos do programa pode mudar; confirme se o seu está no elenco.",
+      "relacionados": [
+        "SER01",
+        "SER04",
+        "SER03"
+      ]
+    },
+    {
+      "id": "SER03",
+      "tema": "servicos",
+      "subtema": "saude",
+      "titulo": "Vacinação pelo SUS",
+      "pergunta": "Onde tomar vacina de graça?",
+      "palavras_chave": [
+        "vacina",
+        "vacinacao",
+        "calendario de vacinacao",
+        "vacina infantil",
+        "crianca",
+        "caderneta de vacinacao",
+        "ubs",
+        "posto de saude"
+      ],
+      "orientacao": "As vacinas do Calendário Nacional de Vacinação são oferecidas gratuitamente pelo SUS nas Unidades Básicas de Saúde (postos de saúde). O calendário indica quais vacinas cada grupo deve tomar: crianças, adolescentes, adultos, idosos e gestantes.",
+      "passos": [
+        "Consulte no calendário do Ministério da Saúde as vacinas indicadas para a idade.",
+        "Vá a uma Unidade Básica de Saúde com a caderneta de vacinação e um documento.",
+        "Confira na caderneta a data da próxima dose."
+      ],
+      "referencia": {
+        "orgao": "Ministério da Saúde (gov.br)",
+        "titulo": "Calendário de Vacinação",
+        "url": "https://www.gov.br/saude/pt-br/vacinacao/calendario"
+      },
+      "data_verificacao": "2026-11-19",
+      "requer_confirmacao": true,
+      "observacao_confirmacao": "Horários das salas de vacina e campanhas variam por município.",
+      "relacionados": [
+        "SER01",
+        "SER02",
+        "COM03"
+      ]
+    },
+    {
+      "id": "SER04",
+      "tema": "servicos",
+      "subtema": "assistencia_social",
+      "titulo": "Cadastro Único (CadÚnico)",
+      "pergunta": "Como fazer o Cadastro Único para programas sociais?",
+      "palavras_chave": [
+        "cadastro unico",
+        "cadunico",
+        "cad unico",
+        "programas sociais",
+        "bolsa familia",
+        "cras",
+        "baixa renda",
+        "beneficio social"
+      ],
+      "orientacao": "O Cadastro Único identifica as famílias de baixa renda e é a porta de entrada para vários programas sociais. Podem se cadastrar as famílias com renda mensal de até meio salário-mínimo por pessoa (ou acima disso, quando o programa exigir o cadastro). O cadastro é gratuito e feito presencialmente no posto de atendimento do município, como o CRAS.",
+      "passos": [
+        "Procure o CRAS ou o posto do Cadastro Único da sua cidade.",
+        "O responsável pela família comparece levando os documentos de todos os moradores (confirme a lista no posto).",
+        "Mantenha o cadastro atualizado sempre que mudar a renda, o endereço ou a composição da família."
+      ],
+      "referencia": {
+        "orgao": "Ministério do Desenvolvimento e Assistência Social (gov.br)",
+        "titulo": "Cadastro Único",
+        "url": "https://www.gov.br/mds/pt-br/acoes-e-programas/cadastro-unico"
+      },
+      "data_verificacao": "2026-11-19",
+      "requer_confirmacao": true,
+      "observacao_confirmacao": "Regras de renda e de cada programa social mudam; confirme no CRAS.",
+      "relacionados": [
+        "SER02",
+        "DIR06",
+        "SER06"
+      ]
+    },
+    {
+      "id": "SER05",
+      "tema": "servicos",
+      "subtema": "trabalho_previdencia",
+      "titulo": "Seguro-desemprego",
+      "pergunta": "Como pedir o seguro-desemprego?",
+      "palavras_chave": [
+        "seguro desemprego",
+        "seguro-desemprego",
+        "desemprego",
+        "auxilio desemprego",
+        "demissao",
+        "mandado embora",
+        "beneficio"
+      ],
+      "orientacao": "Quem foi dispensado sem justa causa pode pedir o seguro-desemprego pelo aplicativo Carteira de Trabalho Digital ou pelo portal gov.br. É necessário o Requerimento do Seguro-Desemprego, entregue pelo empregador na demissão. No mesmo aplicativo é possível acompanhar o valor, a quantidade e as datas das parcelas.",
+      "passos": [
+        "Guarde o Requerimento do Seguro-Desemprego entregue pela empresa.",
+        "Faça o pedido pelo aplicativo Carteira de Trabalho Digital ou pelo gov.br.",
+        "Acompanhe a liberação das parcelas no aplicativo.",
+        "Dúvidas: Central 158."
+      ],
+      "referencia": {
+        "orgao": "Ministério do Trabalho e Emprego (gov.br)",
+        "titulo": "Solicitar o Seguro-Desemprego",
+        "url": "https://www.gov.br/pt-br/servicos/solicitar-o-seguro-desemprego"
+      },
+      "data_verificacao": "2026-11-19",
+      "requer_confirmacao": true,
+      "observacao_confirmacao": "Há prazo para fazer o pedido depois da demissão e regras de carência; confira na página oficial.",
+      "relacionados": [
+        "DOC03",
+        "SER06",
+        "SER04"
+      ]
+    },
+    {
+      "id": "SER06",
+      "tema": "servicos",
+      "subtema": "trabalho_previdencia",
+      "titulo": "Serviços do INSS (Meu INSS)",
+      "pergunta": "Como pedir aposentadoria ou outro benefício do INSS?",
+      "palavras_chave": [
+        "inss",
+        "meu inss",
+        "aposentadoria",
+        "beneficio",
+        "auxilio doenca",
+        "salario maternidade",
+        "pensao",
+        "previdencia",
+        "central 135"
+      ],
+      "orientacao": "Os serviços do INSS — como pedidos de aposentadoria, benefício por incapacidade, salário-maternidade e pensão, além de extratos — são solicitados pelo site ou aplicativo Meu INSS (com a conta gov.br) ou pela Central 135. O direito e o valor de cada benefício dependem da análise do próprio INSS; este assistente não calcula benefícios.",
+      "passos": [
+        "Entre no Meu INSS (site ou aplicativo) com sua conta gov.br.",
+        "Escolha o serviço desejado e acompanhe o pedido pelo número de protocolo.",
+        "Sem internet? Ligue para a Central 135."
+      ],
+      "referencia": {
+        "orgao": "Instituto Nacional do Seguro Social (gov.br)",
+        "titulo": "Canais de atendimento do INSS",
+        "url": "https://www.gov.br/inss/pt-br/canais_atendimento"
+      },
+      "data_verificacao": "2026-11-19",
+      "requer_confirmacao": true,
+      "observacao_confirmacao": "Regras de benefícios previdenciários mudam com frequência e dependem do seu histórico.",
+      "relacionados": [
+        "DOC07",
+        "SER05",
+        "DIR04"
+      ]
+    },
+    {
+      "id": "DIR01",
+      "tema": "direitos",
+      "subtema": "consumidor",
+      "titulo": "Direito de arrependimento em compras on-line",
+      "pergunta": "Posso desistir de uma compra feita pela internet?",
+      "palavras_chave": [
+        "direito de arrependimento",
+        "arrependimento",
+        "desistir da compra",
+        "devolver compra",
+        "compra pela internet",
+        "compra online",
+        "sete dias",
+        "7 dias",
+        "devolucao"
+      ],
+      "orientacao": "Pelo Código de Defesa do Consumidor (art. 49), quem compra fora da loja física — pela internet, telefone ou catálogo — pode desistir da compra em até 7 dias, contados da assinatura do contrato ou do recebimento do produto. Os valores pagos devem ser devolvidos de imediato e corrigidos.",
+      "passos": [
+        "Avise a empresa por escrito (e-mail, chat ou site) dentro dos 7 dias e guarde o comprovante.",
+        "Peça o reembolso integral, incluindo o frete.",
+        "Se a empresa não resolver, registre reclamação no Consumidor.gov.br ou no Procon."
+      ],
+      "referencia": {
+        "orgao": "Planalto — Legislação federal",
+        "titulo": "Lei nº 8.078/1990 (Código de Defesa do Consumidor), art. 49",
+        "url": "https://www.planalto.gov.br/ccivil_03/leis/l8078compilado.htm"
+      },
+      "data_verificacao": "2026-11-19",
+      "requer_confirmacao": false,
+      "relacionados": [
+        "DIR02",
+        "DIR03",
+        "DIR07"
+      ]
+    },
+    {
+      "id": "DIR02",
+      "tema": "direitos",
+      "subtema": "consumidor",
+      "titulo": "Reclamar de uma empresa (Consumidor.gov.br e Procon)",
+      "pergunta": "Onde reclamar de uma empresa que não resolve meu problema?",
+      "palavras_chave": [
+        "reclamar",
+        "reclamacao",
+        "consumidor.gov.br",
+        "procon",
+        "empresa",
+        "problema com empresa",
+        "direito do consumidor",
+        "defesa do consumidor"
+      ],
+      "orientacao": "O Consumidor.gov.br é um serviço público e gratuito que permite falar diretamente com empresas participantes pela internet para resolver problemas de consumo; segundo o site, as empresas respondem em um prazo médio de 7 dias. Se a empresa não participar ou não resolver, procure o Procon da sua cidade ou estado.",
+      "passos": [
+        "Verifique se a empresa participa do Consumidor.gov.br.",
+        "Entre com sua conta gov.br e descreva o problema, anexando notas e comprovantes.",
+        "Sem solução, procure o Procon; para cobrar indenização, avalie o Juizado Especial Cível."
+      ],
+      "referencia": {
+        "orgao": "Secretaria Nacional do Consumidor",
+        "titulo": "Consumidor.gov.br — Sobre o serviço",
+        "url": "https://www.consumidor.gov.br/pages/conteudo/sobre-servico"
+      },
+      "data_verificacao": "2026-11-19",
+      "requer_confirmacao": false,
+      "relacionados": [
+        "DIR01",
+        "DIR03",
+        "DIR04"
+      ]
+    },
+    {
+      "id": "DIR03",
+      "tema": "direitos",
+      "subtema": "justica",
+      "titulo": "Juizado Especial Cível (pequenas causas)",
+      "pergunta": "Posso entrar na Justiça sem advogado?",
+      "palavras_chave": [
+        "juizado especial",
+        "pequenas causas",
+        "juizado especial civel",
+        "processar",
+        "processo",
+        "sem advogado",
+        "entrar na justica",
+        "acao judicial"
+      ],
+      "orientacao": "O Juizado Especial Cível julga causas de menor complexidade de até 40 salários-mínimos (Lei nº 9.099/1995). Nas causas de até 20 salários-mínimos, a própria pessoa pode entrar com o pedido sem advogado; acima desse valor, a assistência de advogado é obrigatória.",
+      "passos": [
+        "Reúna documentos e provas (contratos, notas, conversas, protocolos).",
+        "Procure o Juizado Especial Cível da sua cidade (muitos aceitam pedido on-line).",
+        "Compareça às audiências marcadas: a primeira costuma ser de conciliação."
+      ],
+      "referencia": {
+        "orgao": "Planalto — Legislação federal",
+        "titulo": "Lei nº 9.099/1995 (Juizados Especiais), arts. 3º e 9º",
+        "url": "https://www.planalto.gov.br/ccivil_03/leis/l9099.htm"
+      },
+      "data_verificacao": "2026-11-19",
+      "requer_confirmacao": true,
+      "observacao_confirmacao": "Cada tribunal define a forma de atendimento; casos concretos devem ser avaliados por profissional.",
+      "relacionados": [
+        "DIR04",
+        "DIR02",
+        "DIR01"
+      ]
+    },
+    {
+      "id": "DIR04",
+      "tema": "direitos",
+      "subtema": "justica",
+      "titulo": "Assistência jurídica gratuita (Defensoria Pública)",
+      "pergunta": "Não tenho dinheiro para advogado, o que faço?",
+      "palavras_chave": [
+        "defensoria publica",
+        "defensoria",
+        "assistencia juridica gratuita",
+        "advogado gratuito",
+        "advogado de graca",
+        "sem dinheiro para advogado",
+        "justica gratuita"
+      ],
+      "orientacao": "A Constituição garante assistência jurídica integral e gratuita a quem comprovar que não tem recursos (art. 5º, LXXIV). Esse atendimento é prestado pela Defensoria Pública (art. 134): a do seu estado, na maioria dos casos, ou a Defensoria Pública da União, em causas contra órgãos federais, como o INSS.",
+      "passos": [
+        "Procure a Defensoria Pública do seu estado (ou a da União, para causas federais).",
+        "Leve documentos pessoais, comprovante de renda e os papéis do seu caso.",
+        "A Defensoria avalia se você se enquadra no atendimento gratuito."
+      ],
+      "referencia": {
+        "orgao": "Planalto — Legislação federal",
+        "titulo": "Constituição Federal de 1988, art. 5º, LXXIV, e art. 134",
+        "url": "https://www.planalto.gov.br/ccivil_03/constituicao/constituicao.htm"
+      },
+      "data_verificacao": "2026-11-19",
+      "requer_confirmacao": true,
+      "observacao_confirmacao": "Os critérios de renda para atendimento são definidos por cada Defensoria.",
+      "relacionados": [
+        "DIR03",
+        "DIR02",
+        "COM01"
+      ]
+    },
+    {
+      "id": "DIR05",
+      "tema": "direitos",
+      "subtema": "grupos_prioritarios",
+      "titulo": "Atendimento prioritário à pessoa idosa",
+      "pergunta": "Pessoa idosa tem prioridade no atendimento?",
+      "palavras_chave": [
+        "prioridade",
+        "atendimento prioritario",
+        "fila",
+        "idoso",
+        "pessoa idosa",
+        "estatuto da pessoa idosa",
+        "60 anos",
+        "80 anos",
+        "banco"
+      ],
+      "orientacao": "Pelo Estatuto da Pessoa Idosa (Lei nº 10.741/2003), pessoas com 60 anos ou mais têm direito a atendimento preferencial, imediato e individualizado em órgãos públicos e empresas privadas que prestam serviços à população. Entre as pessoas idosas, quem tem mais de 80 anos tem prioridade especial.",
+      "passos": [
+        "Informe no atendimento que você tem 60 anos ou mais e apresente um documento.",
+        "Se o direito for negado, peça para falar com o responsável e registre reclamação na ouvidoria.",
+        "Violações de direitos da pessoa idosa podem ser denunciadas no Disque 100."
+      ],
+      "referencia": {
+        "orgao": "Planalto — Legislação federal",
+        "titulo": "Lei nº 10.741/2003 (Estatuto da Pessoa Idosa), arts. 1º e 3º",
+        "url": "https://www.planalto.gov.br/ccivil_03/leis/2003/l10.741.htm"
+      },
+      "data_verificacao": "2026-11-19",
+      "requer_confirmacao": false,
+      "relacionados": [
+        "DIR06",
+        "COM01",
+        "SER06"
+      ]
+    },
+    {
+      "id": "DIR06",
+      "tema": "direitos",
+      "subtema": "grupos_prioritarios",
+      "titulo": "Meia-entrada",
+      "pergunta": "Quem tem direito a meia-entrada?",
+      "palavras_chave": [
+        "meia entrada",
+        "meia-entrada",
+        "meia",
+        "ingresso",
+        "show",
+        "cinema",
+        "estudante",
+        "carteirinha de estudante",
+        "id jovem",
+        "evento"
+      ],
+      "orientacao": "A Lei nº 12.933/2013 garante meia-entrada (50% do preço cobrado) em eventos culturais e esportivos para estudantes com carteira estudantil, pessoas com deficiência (e acompanhante, quando necessário) e jovens de 15 a 29 anos de baixa renda inscritos no CadÚnico (ID Jovem). Pessoas idosas têm o mesmo desconto pelo Estatuto da Pessoa Idosa. A lei permite limitar a meia-entrada a 40% dos ingressos de cada evento.",
+      "passos": [
+        "Tenha em mãos o documento que comprova o direito (carteira estudantil, ID Jovem, documento que comprove a deficiência ou a idade).",
+        "Peça a meia-entrada na compra e apresente o documento na entrada do evento."
+      ],
+      "referencia": {
+        "orgao": "Planalto — Legislação federal",
+        "titulo": "Lei nº 12.933/2013 (Lei da Meia-Entrada)",
+        "url": "https://www.planalto.gov.br/ccivil_03/_ato2011-2014/2013/lei/l12933.htm"
+      },
+      "data_verificacao": "2026-11-19",
+      "requer_confirmacao": false,
+      "relacionados": [
+        "DIR05",
+        "SER04",
+        "DIR02"
+      ]
+    },
+    {
+      "id": "DIR07",
+      "tema": "direitos",
+      "subtema": "dados_pessoais",
+      "titulo": "Direitos sobre seus dados pessoais (LGPD)",
+      "pergunta": "Como saber quais dados uma empresa tem sobre mim?",
+      "palavras_chave": [
+        "lgpd",
+        "dados pessoais",
+        "protecao de dados",
+        "meus dados",
+        "apagar meus dados",
+        "vazamento de dados",
+        "privacidade",
+        "anpd"
+      ],
+      "orientacao": "A Lei Geral de Proteção de Dados (Lei nº 13.709/2018, art. 18) dá a você o direito de pedir a uma empresa ou órgão a confirmação de que trata seus dados, o acesso a eles, a correção de dados errados, a eliminação de dados desnecessários e informações sobre com quem foram compartilhados. Se o pedido não for atendido, é possível reclamar à Autoridade Nacional de Proteção de Dados (ANPD).",
+      "passos": [
+        "Procure o canal de privacidade ou o encarregado de dados (DPO) da empresa ou órgão.",
+        "Faça o pedido por escrito e guarde o protocolo.",
+        "Sem resposta, registre petição na ANPD."
+      ],
+      "referencia": {
+        "orgao": "Planalto — Legislação federal",
+        "titulo": "Lei nº 13.709/2018 (LGPD), art. 18",
+        "url": "https://www.planalto.gov.br/ccivil_03/_ato2015-2018/2018/lei/l13709.htm"
+      },
+      "data_verificacao": "2026-11-19",
+      "requer_confirmacao": false,
+      "relacionados": [
+        "DIR02",
+        "DIR01",
+        "DOC07"
+      ]
+    },
+    {
+      "id": "COM01",
+      "tema": "comunitario",
+      "subtema": "denuncia",
+      "titulo": "Disque 100 (Direitos Humanos)",
+      "pergunta": "Onde denunciar violação de direitos humanos?",
+      "palavras_chave": [
+        "disque 100",
+        "direitos humanos",
+        "denunciar",
+        "denuncia",
+        "violencia contra crianca",
+        "violencia contra idoso",
+        "maus tratos",
+        "abuso",
+        "trabalho infantil"
+      ],
+      "orientacao": "O Disque 100 (Disque Direitos Humanos) recebe denúncias de violações de direitos humanos, especialmente contra crianças e adolescentes, pessoas idosas, pessoas com deficiência, população em situação de rua e outros grupos vulneráveis. A ligação é gratuita, o serviço funciona 24 horas, todos os dias, e a denúncia pode ser anônima.",
+      "passos": [
+        "Ligue 100 de qualquer telefone, gratuitamente.",
+        "Descreva o que aconteceu, onde e quem está envolvido; você não precisa se identificar.",
+        "Em perigo imediato, ligue 190 (Polícia Militar)."
+      ],
+      "referencia": {
+        "orgao": "Ministério dos Direitos Humanos e da Cidadania (gov.br)",
+        "titulo": "Disque 100",
+        "url": "https://www.gov.br/mdh/pt-br/disque100"
+      },
+      "data_verificacao": "2026-11-19",
+      "requer_confirmacao": false,
+      "relacionados": [
+        "COM02",
+        "DIR05",
+        "COM03"
+      ]
+    },
+    {
+      "id": "COM02",
+      "tema": "comunitario",
+      "subtema": "denuncia",
+      "titulo": "Ligue 180 (violência contra a mulher)",
+      "pergunta": "Qual o número para denunciar violência contra a mulher?",
+      "palavras_chave": [
+        "ligue 180",
+        "180",
+        "violencia contra a mulher",
+        "violencia domestica",
+        "maria da penha",
+        "agressao",
+        "mulher",
+        "central de atendimento a mulher"
+      ],
+      "orientacao": "A Central de Atendimento à Mulher — Ligue 180 — orienta sobre leis, direitos das mulheres e serviços da rede de atendimento (como a Casa da Mulher Brasileira) e recebe denúncias de violência contra a mulher. A ligação é gratuita e o serviço funciona 24 horas por dia, todos os dias da semana.",
+      "passos": [
+        "Ligue 180 de qualquer telefone, gratuitamente.",
+        "A atendente orienta sobre os direitos e encaminha a denúncia aos órgãos competentes.",
+        "Em perigo imediato, ligue 190 (Polícia Militar)."
+      ],
+      "referencia": {
+        "orgao": "Ministério das Mulheres (gov.br)",
+        "titulo": "Ligue 180",
+        "url": "https://www.gov.br/mulheres/pt-br/ligue180"
+      },
+      "data_verificacao": "2026-11-19",
+      "requer_confirmacao": false,
+      "relacionados": [
+        "COM01",
+        "DIR04",
+        "COM03"
+      ]
+    },
+    {
+      "id": "COM03",
+      "tema": "comunitario",
+      "subtema": "emergencia",
+      "titulo": "SAMU 192 (urgência médica)",
+      "pergunta": "Para qual número ligar em uma emergência médica?",
+      "palavras_chave": [
+        "samu",
+        "192",
+        "emergencia medica",
+        "urgencia",
+        "ambulancia",
+        "socorro",
+        "passando mal",
+        "desmaio",
+        "acidente"
+      ],
+      "orientacao": "O SAMU 192 atende urgências e emergências médicas, como dor no peito, dificuldade para respirar, desmaios e acidentes. A ligação é gratuita e o serviço funciona 24 horas. Ao ligar, informe o endereço com pontos de referência e siga as orientações do atendente até a chegada da equipe.",
+      "passos": [
+        "Ligue 192 de qualquer telefone, gratuitamente.",
+        "Informe o que aconteceu, o endereço completo e um ponto de referência.",
+        "Mantenha a linha livre e siga as orientações até a equipe chegar."
+      ],
+      "referencia": {
+        "orgao": "Ministério da Saúde (gov.br)",
+        "titulo": "SAMU 192",
+        "url": "https://www.gov.br/saude/pt-br/composicao/saes/samu-192"
+      },
+      "data_verificacao": "2026-11-19",
+      "requer_confirmacao": false,
+      "relacionados": [
+        "SER03",
+        "COM01",
+        "SER01"
+      ]
+    }
+  ]
+}

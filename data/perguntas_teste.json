@@ -1,0 +1,369 @@
+{
+  "descricao": "Perguntas de teste do Citizen Assist AI. 'esperado' é o id da orientação correta ou a situação esperada: SEM_RESPOSTA, AMBIGUA, ENTRADA_VAZIA ou ENTRADA_INVALIDA. Perguntas e cenários são fictícios. T28 a T42 foram escritas por um agente de IA independente que viu apenas os títulos dos assuntos, sem acesso às palavras-chave (validação às cegas). T43 a T54 (lote 2) foram escritas por outro agente depois dos ajustes e rodadas uma única vez, sem nenhum ajuste posterior: é a estimativa mais honesta de desempenho.",
+  "perguntas": [
+    {
+      "id": "T01",
+      "tipo": "direta",
+      "pergunta": "Como tirar a Carteira de Identidade Nacional?",
+      "esperado": "DOC01"
+    },
+    {
+      "id": "T02",
+      "tipo": "direta",
+      "pergunta": "Como faço para fazer meu CPF?",
+      "esperado": "DOC02"
+    },
+    {
+      "id": "T03",
+      "tipo": "direta",
+      "pergunta": "Como pedir o seguro-desemprego?",
+      "esperado": "SER05"
+    },
+    {
+      "id": "T04",
+      "tipo": "direta",
+      "pergunta": "Como emitir o passaporte?",
+      "esperado": "DOC05"
+    },
+    {
+      "id": "T05",
+      "tipo": "direta",
+      "pergunta": "Onde consigo o cartão do SUS?",
+      "esperado": "SER01"
+    },
+    {
+      "id": "T06",
+      "tipo": "direta",
+      "pergunta": "Comprei pela internet e me arrependi, posso devolver?",
+      "esperado": "DIR01"
+    },
+    {
+      "id": "T07",
+      "tipo": "direta",
+      "pergunta": "Qual o número para denunciar violência contra a mulher?",
+      "esperado": "COM02"
+    },
+    {
+      "id": "T08",
+      "tipo": "direta",
+      "pergunta": "Quem tem direito a meia-entrada?",
+      "esperado": "DIR06"
+    },
+    {
+      "id": "T09",
+      "tipo": "reformulacao",
+      "pergunta": "fui mandado embora, e agora? como recebo o auxílio desemprego",
+      "esperado": "SER05",
+      "obs": "linguagem informal"
+    },
+    {
+      "id": "T10",
+      "tipo": "reformulacao",
+      "pergunta": "preciso do rg novo",
+      "esperado": "DOC01",
+      "obs": "sigla popular (RG)"
+    },
+    {
+      "id": "T11",
+      "tipo": "reformulacao",
+      "pergunta": "pasaporte pra viajar",
+      "esperado": "DOC05",
+      "obs": "erro de digitação"
+    },
+    {
+      "id": "T12",
+      "tipo": "reformulacao",
+      "pergunta": "remédio de graça para pressão alta",
+      "esperado": "SER02",
+      "obs": "sinônimos (remédio, pressão)"
+    },
+    {
+      "id": "T13",
+      "tipo": "reformulacao",
+      "pergunta": "não tenho dinheiro para pagar advogado",
+      "esperado": "DIR04"
+    },
+    {
+      "id": "T14",
+      "tipo": "reformulacao",
+      "pergunta": "minha avó tem prioridade na fila do banco?",
+      "esperado": "DIR05",
+      "obs": "sinônimo (avó -> idoso)"
+    },
+    {
+      "id": "T15",
+      "tipo": "reformulacao",
+      "pergunta": "quero reclamar de uma loja que não resolve meu problema",
+      "esperado": "DIR02",
+      "obs": "sinônimo (loja -> empresa)"
+    },
+    {
+      "id": "T16",
+      "tipo": "reformulacao",
+      "pergunta": "como deixar minha conta do governo nível ouro",
+      "esperado": "DOC07"
+    },
+    {
+      "id": "T17",
+      "tipo": "reformulacao",
+      "pergunta": "vacina de criança onde tomar",
+      "esperado": "SER03"
+    },
+    {
+      "id": "T18",
+      "tipo": "reformulacao",
+      "pergunta": "alguém passando mal, chamar ambulância",
+      "esperado": "COM03"
+    },
+    {
+      "id": "T19",
+      "tipo": "fora_do_tema",
+      "pergunta": "Qual a receita de bolo de cenoura?",
+      "esperado": "SEM_RESPOSTA"
+    },
+    {
+      "id": "T20",
+      "tipo": "fora_do_tema",
+      "pergunta": "Quem ganhou o jogo de futebol ontem?",
+      "esperado": "SEM_RESPOSTA"
+    },
+    {
+      "id": "T21",
+      "tipo": "fora_do_tema",
+      "pergunta": "Como tirar a carteira de motorista (CNH)?",
+      "esperado": "SEM_RESPOSTA",
+      "obs": "assunto próximo, mas fora da base"
+    },
+    {
+      "id": "T22",
+      "tipo": "limitacao",
+      "pergunta": "",
+      "esperado": "ENTRADA_VAZIA",
+      "obs": "entrada vazia"
+    },
+    {
+      "id": "T23",
+      "tipo": "limitacao",
+      "pergunta": "documento",
+      "esperado": "AMBIGUA",
+      "obs": "consulta ambígua (palavra genérica)"
+    },
+    {
+      "id": "T24",
+      "tipo": "limitacao",
+      "pergunta": "???!!!",
+      "esperado": "ENTRADA_INVALIDA",
+      "obs": "só símbolos"
+    },
+    {
+      "id": "T25",
+      "tipo": "limitacao",
+      "pergunta": "Qual o horário de funcionamento do posto de saúde do meu bairro?",
+      "esperado": "SEM_RESPOSTA",
+      "obs": "ausência de resposta confiável (dado local)"
+    },
+    {
+      "id": "T26",
+      "tipo": "limitacao",
+      "pergunta": "benefício",
+      "esperado": "AMBIGUA",
+      "obs": "consulta ambígua"
+    },
+    {
+      "id": "T27",
+      "tipo": "limitacao",
+      "pergunta": "meu cpf é 123.456.789-00, como faço a carteira de trabalho digital?",
+      "esperado": "DOC03",
+      "obs": "dado pessoal deve ser removido"
+    },
+    {
+      "id": "T28",
+      "tipo": "cega",
+      "pergunta": "quero tirar meu primeiro documento de viagem pra fora do pais, como faço?",
+      "esperado": "DOC05",
+      "obs": "escrita às cegas (só com os títulos dos assuntos)"
+    },
+    {
+      "id": "T29",
+      "tipo": "cega",
+      "pergunta": "meu RG é antigo, preciso trocar por aquele modelo novo com CPF?",
+      "esperado": "DOC01",
+      "obs": "escrita às cegas (só com os títulos dos assuntos)"
+    },
+    {
+      "id": "T30",
+      "tipo": "cega",
+      "pergunta": "comprei um tenis pela internet e nao gostei, posso devolver e ter o dinheiro de volta?",
+      "esperado": "DIR01",
+      "obs": "escrita às cegas (só com os títulos dos assuntos)"
+    },
+    {
+      "id": "T31",
+      "tipo": "cega",
+      "pergunta": "nao tenho dinheiro pra pagar advogado, onde consigo ajuda de graça?",
+      "esperado": "DIR04",
+      "obs": "escrita às cegas (só com os títulos dos assuntos)"
+    },
+    {
+      "id": "T32",
+      "tipo": "cega",
+      "pergunta": "fui demitido semana passada, tenho direito a alguma ajuda do governo?",
+      "esperado": "SER05",
+      "obs": "escrita às cegas (só com os títulos dos assuntos)"
+    },
+    {
+      "id": "T33",
+      "tipo": "cega",
+      "pergunta": "minha mae ta passando mal, desmaiou, pra onde ligo urgente??",
+      "esperado": "COM03",
+      "obs": "escrita às cegas (só com os títulos dos assuntos)"
+    },
+    {
+      "id": "T34",
+      "tipo": "cega",
+      "pergunta": "completei 16 anos, como faço pra poder votar?",
+      "esperado": "DOC04",
+      "obs": "escrita às cegas (só com os títulos dos assuntos)"
+    },
+    {
+      "id": "T35",
+      "tipo": "cega",
+      "pergunta": "uma empresa usou meus dados sem eu autorizar, o que posso fazer?",
+      "esperado": "DIR07",
+      "obs": "escrita às cegas (só com os títulos dos assuntos)"
+    },
+    {
+      "id": "T36",
+      "tipo": "cega",
+      "pergunta": "onde consigo remedio de pressao mais barato ou de graça?",
+      "esperado": "SER02",
+      "obs": "escrita às cegas (só com os títulos dos assuntos)"
+    },
+    {
+      "id": "T37",
+      "tipo": "cega",
+      "pergunta": "meu vizinho ta agredindo a esposa, tem algum numero pra denunciar?",
+      "esperado": "COM02",
+      "obs": "escrita às cegas (só com os títulos dos assuntos)"
+    },
+    {
+      "id": "T38",
+      "tipo": "cega",
+      "pergunta": "sou estudante, tenho direito de pagar metade no cinema?",
+      "esperado": "DIR06",
+      "obs": "escrita às cegas (só com os títulos dos assuntos)"
+    },
+    {
+      "id": "T39",
+      "tipo": "cega",
+      "pergunta": "como faço pra renovar minha CNH que venceu?",
+      "esperado": "SEM_RESPOSTA",
+      "obs": "escrita às cegas (só com os títulos dos assuntos)"
+    },
+    {
+      "id": "T40",
+      "tipo": "cega",
+      "pergunta": "quando vence o IPTU do meu apartamento e como parcelar?",
+      "esperado": "SEM_RESPOSTA",
+      "obs": "escrita às cegas (só com os títulos dos assuntos)"
+    },
+    {
+      "id": "T41",
+      "tipo": "cega",
+      "pergunta": "como matricular meu filho na escola publica do bairro?",
+      "esperado": "SEM_RESPOSTA",
+      "obs": "escrita às cegas (só com os títulos dos assuntos)"
+    },
+    {
+      "id": "T42",
+      "tipo": "cega",
+      "pergunta": "recebi uma multa de transito injusta, como recorro?",
+      "esperado": "SEM_RESPOSTA",
+      "obs": "escrita às cegas (só com os títulos dos assuntos)"
+    },
+    {
+      "id": "T43",
+      "tipo": "cega2",
+      "pergunta": "oi, como faço pra tirar meu cpf pela primeira vez? nunca tive e preciso pra abrir conta",
+      "esperado": "DOC02",
+      "obs": "lote 2 às cegas, rodado uma única vez, sem ajustes depois"
+    },
+    {
+      "id": "T44",
+      "tipo": "cega2",
+      "pergunta": "carteira de trabalho agora é só no celular? onde baixo o app",
+      "esperado": "DOC03",
+      "obs": "lote 2 às cegas, rodado uma única vez, sem ajustes depois"
+    },
+    {
+      "id": "T45",
+      "tipo": "cega2",
+      "pergunta": "preciso da certidao de nascimento da minha filha mas nao tenho dinheiro, tem como tirar de graça??",
+      "esperado": "DOC06",
+      "obs": "lote 2 às cegas, rodado uma única vez, sem ajustes depois"
+    },
+    {
+      "id": "T46",
+      "tipo": "cega2",
+      "pergunta": "o que significa conta gov.br prata e ouro? to tentando entrar num serviço e pede nível maior",
+      "esperado": "DOC07",
+      "obs": "lote 2 às cegas, rodado uma única vez, sem ajustes depois"
+    },
+    {
+      "id": "T47",
+      "tipo": "cega2",
+      "pergunta": "perdi meu cartao do sus, como faço pra tirar outro? preciso do numero pra consulta",
+      "esperado": "SER01",
+      "obs": "lote 2 às cegas, rodado uma única vez, sem ajustes depois"
+    },
+    {
+      "id": "T48",
+      "tipo": "cega2",
+      "pergunta": "Boa tarde. Quais vacinas meu neto de 2 anos precisa tomar e onde posso levar ele no posto de saúde?",
+      "esperado": "SER03",
+      "obs": "lote 2 às cegas, rodado uma única vez, sem ajustes depois"
+    },
+    {
+      "id": "T49",
+      "tipo": "cega2",
+      "pergunta": "como entro no cadunico pra receber o bolsa familia? moro de aluguel com mais 3 pessoas",
+      "esperado": "SER04",
+      "obs": "lote 2 às cegas, rodado uma única vez, sem ajustes depois"
+    },
+    {
+      "id": "T50",
+      "tipo": "cega2",
+      "pergunta": "quero ver extrato do meu beneficio no meu inss mas esqueci como acessa o aplicativo",
+      "esperado": "SER06",
+      "obs": "lote 2 às cegas, rodado uma única vez, sem ajustes depois"
+    },
+    {
+      "id": "T51",
+      "tipo": "cega2",
+      "pergunta": "comprei uma geladeira e a loja nao resolve o defeito ha dois meses, posso reclamar no consumidor gov br?",
+      "esperado": "DIR02",
+      "obs": "lote 2 às cegas, rodado uma única vez, sem ajustes depois"
+    },
+    {
+      "id": "T52",
+      "tipo": "cega2",
+      "pergunta": "como faço para tirar o passe livre de ônibus intermunicipal para estudante?",
+      "esperado": "SEM_RESPOSTA",
+      "obs": "lote 2 às cegas, rodado uma única vez, sem ajustes depois"
+    },
+    {
+      "id": "T53",
+      "tipo": "cega2",
+      "pergunta": "qual o prazo pra eu pedir a aposentadoria por idade rural? meu pai tem 60 anos e sempre trabalhou na roça",
+      "esperado": "SEM_RESPOSTA",
+      "obs": "lote 2 às cegas, rodado uma única vez, sem ajustes depois"
+    },
+    {
+      "id": "T54",
+      "tipo": "cega2",
+      "pergunta": "como faço pra registrar um imóvel no cartório depois da compra, preciso de escritura?",
+      "esperado": "SEM_RESPOSTA",
+      "obs": "lote 2 às cegas, rodado uma única vez, sem ajustes depois"
+    }
+  ]
+}
